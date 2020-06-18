@@ -1,0 +1,493 @@
+*{
+	box-sizing: border-box;
+	list-style: none;
+	font-family: "Cambria";
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+
+}
+
+html{
+	font-size: 17px;
+
+}
+
+body{
+	background-color: #efefef;
+
+}
+
+h4{
+	font-size: 18px;
+	margin-left: 10px;
+	margin-bottom: 20px;
+}
+
+hr{
+	width: 60%;
+	background-color: #A43737;
+	margin-left: 10px;
+	height: 2px;
+	border: 0;
+	
+}
+
+/* Barra de navegacion*/
+
+header{
+	width: 100%;
+	height: 80px;
+}
+
+.navegacion{
+	width: 100%;
+	background: rgba(164, 56, 56, 0.9);
+	position: fixed;
+	top: 1px;
+	margin-left: -7px;
+}
+
+.navegacion ul{
+	margin-left: -8px;
+	font-family: bignoodletitling;
+	text-align: center;
+	list-style: none;
+}
+
+.menu li{
+	position: relative;
+	display: inline-block;
+}
+
+.menu li a{
+	display: block;
+	padding: 5px 10px;
+	color: white;
+	text-decoration: none;
+}
+
+.menu li a:hover{
+	color: #CE7D35;
+	transition: all .3s;
+}
+
+/*Contenido*/
+
+.content{
+	margin-top: 50px;
+	text-align: left;
+	margin-left: 20px;
+}
+
+.about{
+	text-align: justify;
+}
+
+.profile-info h2{
+	margin-top: 50px;
+	margin-bottom: 15px;
+	margin-left: 10px;
+}
+
+.profile-info{
+	width: 100%;
+	min-height: calc(100vh - 80px - 300px);
+	float: left;
+	padding: 0 30px;
+}
+
+.profile-info h1{
+	margin-bottom: 10px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+/*Imagen de perfil*/
+
+.profile-img{
+	float: right;
+	width: 30%;
+}
+
+.profile-img img{
+	width: 100%;
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/*Cuadros de destrezas*/
+
+.expertise img{
+	height: 40px;
+	margin: 10px;
+}
+
+.expertise{
+	display: inline-block;
+	width: 28%;
+	padding: 30px 10px;
+	margin: 2%;
+	text-align: center;
+	box-shadow: 0 0 15px 1px rgba(37, 73, 214, 0.18);
+	background-color: #fff;
+	margin-top: 20px;
+	font-size: 17px;
+}
+
+.expertise small{
+	padding-top: 10px;
+	display: inline-grid;
+}
+
+.expertise li{
+	margin-left: -34px;
+	text-align: center;
+}
+
+/*Imagenes de Cursos*/
+
+.projects img{
+	width: 48%;
+	padding: 4px;
+	margin-bottom: 20px;
+	margin-left: 5px;
+	margin-top: 20px;
+}
+
+/*Apartado de programas utilizados*/
+
+.skill-content{
+	display: grid;
+	margin-top: 10px;
+	grid-template-columns: repeat(3,1fr);
+	border: #191919;
+}
+
+.skill-content p{
+	color: #191919;
+	text-align: left;
+	margin-left: 40px;
+	margin-top: 12px;
+	font-size: 17px;
+}
+
+.skil-1{
+	line-height: 17.7px;
+}
+
+.dot{
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	background-color: #191919;
+	display: inline-block;
+	margin-top: 11px;
+}
+
+.dot-2{
+	height: 19px;
+	width: 19px;
+	border-radius: 50%;
+	background-color: #d8d8d8;
+	display: inline-block;
+	border:0.5px solid #191919;
+	margin-top: 11px;
+}
+
+/*Redes sociales*/
+
+.social-media img{
+	height: 50px;
+	margin-right: 15px;
+}
+
+.social-media{
+	margin: 20px 0;
+}
+
+.social-media a{
+	margin-right: 25px;
+	font-size: 22px;
+	text-decoration: none;
+	transition: .3s linear;
+}
+
+/*Telefono y correo*/
+
+.contenedor{
+	margin: 10px;
+	width: 150px;
+	height: 130px;
+	background-color: #efefef;
+	overflow: hidden;
+	display: inline-block;
+}
+
+.imagen{
+	width: 150px;
+	height: 150px;
+	background-color: #efefef;
+	overflow: hidden;
+	-webkit-transition: height .4s;
+}
+
+.imagen img{
+	width: 50px;
+	height: 50px;
+	margin: 40px auto;
+	display: block;
+	-webkit-transition: margin-top .4s;
+
+}
+
+.info{
+	width: 150px;
+	height: 0px;
+	background-color: #233c80;
+	overflow: hidden;
+	-webkit-transition: height .4s;
+}
+
+.titulo{
+	margin: 10px;
+	font-size: 12px;
+	color: white;
+}
+
+.adicional{
+	color: white;
+	font-size: 11px;
+	margin-left: 10px;
+}
+
+.link{
+	float: right;
+	margin-top: -10px;
+	margin-right: 5px;
+	padding: 5px 20px;
+	background-color: #d53a61;
+	font-size: 15px;
+	color: white;
+	text-decoration: none; 
+}
+
+.contenedor:hover .imagen{
+	height: 50px;
+	margin-top: 0px;
+}
+
+.contenedor:hover .info{
+	height: 100px;
+}
+
+/*Pie de pagina*/
+
+footer{
+	width: 100%;
+	height: 300px;
+	padding: 90px 0;
+}
+
+.foot{
+	margin: auto;
+	padding: 0 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#hr2{
+	width: 97%;
+	background-color: #A43737;
+	margin-left: 10px;
+	height: 4px;
+	border: 0;
+}
+
+@media only screen and (max-width: 750px){
+
+	.profile-info{
+		width: 100%;
+		overflow: inherit;
+	}
+
+	hr{
+		width: 70%;
+		background-color: #191919;
+		margin-left: 10px;
+		height: 2px;
+		border: 0;
+	}
+
+	.foot{
+		max-width: 100%;
+	}
+
+	.right-col{
+		height: 200px;
+		margin-bottom: 60px;
+		width: 100%;
+	}
+
+	.left-col{
+		width: 100%;
+		text-align: center;
+		margin-top: 50px;
+	}
+
+	.profile-img{
+		align-self: center;
+		width: 100%;
+	}
+
+	.expertise{
+		width: 95%;
+		margin-bottom: 10%;
+	}
+
+	.expertise img{
+		height: 40px;
+		margin: 10px;
+	}
+
+	.projects img{
+		width: 47%;
+	}
+
+	.skill-content{
+		text-align: center;
+		width: 100%;
+    }
+
+    .skill-content p{
+    	width: 60%;
+    	margin-left: 70px;
+    }
+
+    .skil-1{
+    	line-height: 17px;
+    }
+
+    .social-media img{
+	height: 30px;
+	}
+
+	.contenedor{
+	width: 140px;
+	height: 120px;
+	}
+
+	.imagen{
+		width: 140px;
+		height: 140px;
+	}
+
+	.imagen img{
+		width: 40px;
+		height: 40px;
+	}
+
+	.info{
+		width: 140px;
+	}
+
+	.titulo{
+		margin: 9px;
+		font-size: 11px;
+	}
+
+	.adicional{
+		font-size: 10px;
+		margin-left: 8px;
+	}
+
+	.contenedor:hover .imagen{
+		height: 40px;
+	}
+
+	.contenedor:hover .info{
+		height: 90px;
+	}
+
+}
+
+@media only screen and (max-width: 500px){
+
+	header{
+		height: 100px
+	}
+
+	.navegacion{
+	width: 100%;
+	}
+
+	.navegacion ul{
+	font-family: bignoodletitling;
+	text-align: center;
+	list-style: none;
+	}
+
+	.skil-2{
+    	line-height: 30px;
+    
+	}
+
+    .dot{
+	height: 18px;
+	width: 18px;
+	
+    }
+
+    .dot-2{
+	height: 18px;
+	width: 18px;
+    }
+
+	.right-text{
+		font-size: 14px
+	}
+}
+
+
+@media only screen and (max-width: 406px){
+	header{
+		height: 100px;
+	}
+
+	.skil-2{
+    	line-height: 37px;
+    
+	}
+
+    .dot{
+	height: 12px;
+	width: 12px;
+	
+    }
+
+    .dot-2{
+	height: 12px;
+	width: 12px;
+    }
+}
+
+@media only screen and (max-width: 345px){
+	.skil-2{
+    	line-height: 37px;
+	}
+
+    .dot{
+	height: 10px;
+	width: 10px;
+	
+    }
+
+    .dot-2{
+	height: 10px;
+	width: 10px;
+    }
+}
+
+
+
